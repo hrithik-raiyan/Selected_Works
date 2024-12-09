@@ -3,6 +3,22 @@ import streamlit as st
 from PIL import Image
 import os
 
+
+pages = {
+    "Streamlit": [
+    st.Page("pages/00_MY_PROFILE.py", title ="My Profile"),
+    st.Page("pages/01_GRAND_CANYON_VISITOR_CENTER.py", title ="Project 01"),
+    st.Page("pages/02_CONSTRUCTION_DRAWING.py", title ="Project 02"),
+    st.Page("pages/03_STRUCTURAL_MODULE_WORKSHOP.py", title ="Project 03"),
+    ],
+    "Resources": [
+    st.Page("pages/00_MY_PROFILE.py", title ="My Profile"),
+
+    ]
+}
+pg = st.navigation(pages)
+pg.run()
+
 # Title and basic elements
 st.title("ARCH 492 | Algorithmic Thinking in Design")
 st.subheader('Session 2020 | Credit: 1.5 | Optional Sessional Course')
